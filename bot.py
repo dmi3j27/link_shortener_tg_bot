@@ -1,18 +1,15 @@
 import asyncio
 import logging
-import random
 import string
 import secrets
 import hashlib
 from datetime import datetime
-from typing import Optional, List, Dict
 
 import aiosqlite
 import validators
 from aiogram import Bot, Dispatcher, F, types
 from aiogram.filters import Command, CommandStart
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram.utils.deep_linking import create_start_link
 from config import BOT_TOKEN
 
 # --- CONFIG ---
